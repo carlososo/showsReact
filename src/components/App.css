@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*:before,*::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-family: 'Syne Mono', monospace !important;
+    color:#056674;
+    background-color: rgba(255, 255, 255, 0.9); ;
+}
+h1{
+    margin:0;
+    font-size: 3rem;
+  
+}
+.mb-5{
+    margin-bottom: 3rem;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 85%;
+}
+.headerMain{
+    background-color:#ff4b5c;
+}
+.searchbar{
+    color: #e0ece4;
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+    align-items: center;
+}
+.form-container{
+    width: 50%;
+}
+.field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 5rem;
+    
+}
+    .field label{
+        position:relative;
+        display: inline-block;
+        width: 50%;
+    }
+    .field span{
+        padding:10px;
+        pointer-events: none;
+        position: absolute;
+        left:0;
+        top:0;
+        transition: 200ms;
+        transition-timing-function: ease;
+        transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+        color: black;
+        opacity:0.5
+    }
+    .field input{
+        padding: 9px;
+        width: 100%;
+        border:none;
+        outline: none;
+        background:rgba(255, 255, 255, 0.9);
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    
+    .field input:focus + span, input:not(:placeholder-shown) + span {
+        opacity:1;
+        transform: scale(0.75) translateY(-100%) translateX(-30px);
+        color: white;
+      }
+      
+      /* For IE Browsers*/
+     .field input:focus + span, input:not(:-ms-input-placeholder) + span {
+        opacity:1;
+        transform: scale(0.75) translateY(-100%) translateX(-30px);
+      }
+      .field .btn{
+          border:none;
+          padding: 0 .5rem;
+          height: 3.3rem;
+          background-color: #056674;
+          color: #e0ece4;
+          border-bottom-right-radius: 15px;
+          border-top-right-radius: 15px;
+          outline: none;
+          cursor: pointer;
+
+      }
+
+    .list{
+        display: flex;
+        font-size: 2rem;
+    }
+.main-content{
+    margin-top: 7rem;
+}
+
+.title-main{
+    text-align: center;
+    margin: 3rem 0;
+}
+.static-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.Link{
+    text-decoration: none;
+    color: #e0ece4;
+}
+
+
+.table-div{
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.futer{
+    height: 22vh;
+    margin-top: 17rem;
+    padding: 10rem 0;
+    background-color:#ff4b5c;
+}
+.text-footer{
+    text-align: center;
+}
