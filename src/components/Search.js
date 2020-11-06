@@ -19,7 +19,7 @@ export const Search = ({serieInfo}) => {
     
     return (
         <div className="ui divided items ">
-            {displayInfo()}
+            {serieInfo.length===0? "No results found ese":displayInfo()}
         </div>
     )
 

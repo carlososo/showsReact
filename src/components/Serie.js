@@ -13,6 +13,7 @@ const Serie =()=>{
             .catch(err =>console.log(err));
         
     }, [idSerie])
+
 return (
   <div>
     <div className="ui steps">

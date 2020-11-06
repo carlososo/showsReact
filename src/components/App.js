@@ -19,7 +19,7 @@ const App = () => {
     }).then(({data}) => setSearchFromBar(data))
       .catch(err => console.log(err))
   }
-
+  
   return (
     
     <Router>
